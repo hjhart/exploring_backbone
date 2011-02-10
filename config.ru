@@ -7,3 +7,5 @@ begin
 rescue NameError
   require "#{File.dirname(__FILE__)}/app.rb"
 end
+
+run Sinatra::Application
