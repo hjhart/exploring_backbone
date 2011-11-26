@@ -1,6 +1,6 @@
-## Quick -'n' Dirty
+## Quick 'n' Dirty
 
-* Easy CoffeeScript development inside of the familiar Sinatra platform.
+* Painless CoffeeScript development inside of the familiar Sinatra platform.
 * Compile CoffeeScript automatically on browser refresh
 * Emulates Rails 3.1's asset pipeline
 * Rake task to pre-compile coffeescripts for production-ready javascripts
@@ -10,15 +10,21 @@
 * node.js                  [setup](https://github.com/joyent/node/wiki/Installation)
 * npm package management   [setup](http://npmjs.org/)
 * coffeescript             [setup](http://jashkenas.github.com/coffee-script/#installation)
+* oh, and ruby. 
 
 ## Setup directory
 
 	git clone https://hjhart@github.com/hjhart/sinatra-coffee-script-template.git
 	cd sinatra-coffee-script-template
 	
-Copy the `.rvmrc.example` file to `.rvmrc`. Change the environment variable if you don't want to work with ruby-1.9.2.
+Copy the `.rvmrc.example` file to `.rvmrc`. 
 
-	source .rvmrc # when prompted to trust the file, say yes. This will install everything needed.
+Change the gemset to the name of your project name (or whatever else you want it to be)
+Change the environment variable if you don't want to work with ruby-1.9.2.
+
+	source .rvmrc 
+
+When prompted to trust the file, say yes. This will create the gemset and run bundler. This actually takes a while for therubyracer to install.
 
 ## Where do my coffeescript files go?
 
@@ -41,3 +47,5 @@ Now everytime you load up `/assets/utils.js` it will re-render `utils.coffee` on
 ## Productionizing:
 
 Once everything is ready for production, run `rake js:compile` and it will compile everything into the `public/assets` directory. Keep in mind that until you delete the javascript files within the `public/assets/` directory sinatra will _not_ be feeding the files within the `coffeescript` directory. 
+
+![Counter](http://hjhart.dyndns.org:3003/coffee.jpg "Counter")
