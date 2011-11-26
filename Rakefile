@@ -1,12 +1,14 @@
 require 'rubygems'
 require 'bundler/setup'
 require 'coffee-script'
+require 'fileutils'
 
 namespace :js do
-  desc "compile coffee-scripts from ./src to ./public/views"
+  desc "compile coffee-scripts from ./coffeescript to ./assets (for a production environment)"
   task :compile do
-    source = "#{File.dirname(__FILE__)}/src/"
-    javascripts = "#{File.dirname(__FILE__)}/public/javascripts/"
+    source = "#{File.dirname(__FILE__)}/coffeescript/"
+    javascripts = "#{File.dirname(__FILE__)}/public/assets/"
+    FileUtils.mkdir_p javascripts
     
     Dir.foreach(source) do |cf|
       unless cf == '.' || cf == '..' 
