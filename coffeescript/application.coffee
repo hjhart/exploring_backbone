@@ -1,3 +1,8 @@
+root = exports ? this
+
+class root.Shape extends Backbone.Model
+
 $(document).ready ->
-  $('button:first').click ->
-    $('body').toggleClass 'dark', 'light'
+	s = new Shape color: "blue", shape: "Square"
+	console.log s.get('color')
+	console.log s.get('shape')
