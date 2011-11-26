@@ -7,7 +7,7 @@ get '/' do
   erb :index
 end
 
-# this below will convert anything directly in the coffeescript directly
+# this below will compile any requested file in the coffeescript directory
 get '/assets/:file.js' do
   coffee params[:file].to_sym, :views => "coffeescript"
 end
