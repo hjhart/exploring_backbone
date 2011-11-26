@@ -14,7 +14,7 @@
 
 ## Setup directory
 
-	git clone https://hjhart@github.com/hjhart/sinatra-coffee-script-template.git
+	git clone https://github.com/hjhart/sinatra-coffee-script-template.git
 	cd sinatra-coffee-script-template
 	
 Copy the `.rvmrc.example` file to `.rvmrc`. 
