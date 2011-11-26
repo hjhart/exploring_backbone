@@ -4,7 +4,7 @@ require 'sinatra'
 
 begin
   require_relative 'app.rb'
-rescue NameError
+rescue NameError, LoadError
   require "#{File.dirname(__FILE__)}/app.rb"
 end
 
