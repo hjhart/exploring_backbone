@@ -46,7 +46,7 @@ Now everytime you load up `/assets/utils.js` it will re-render `utils.coffee` on
 	
 ## Productionizing:
 
-Once everything is ready for production, run `rake js:compile` and it will compile everything into the `public/assets` directory. Keep in mind that until you delete the javascript files within the `public/assets/` directory sinatra will _not_ be feeding the files within the `coffeescript` directory. 
+Once everything is ready for production, run `rake js:compile` and it will compile everything into the `public/assets` directory. Make sure your RACK_ENV is not set to 'development'
 
 ## Feedback:
 

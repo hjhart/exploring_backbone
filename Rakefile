@@ -4,9 +4,9 @@ require 'coffee-script'
 require 'fileutils'
 
 namespace :js do
-  desc "compile coffee-scripts from ./coffeescript to ./assets (for a production environment)"
+  desc "compile coffee-scripts from ./assets to ./public/assets (for a production environment)"
   task :compile do
-    source = "#{File.dirname(__FILE__)}/coffeescript/"
+    source = "#{File.dirname(__FILE__)}/assets/"
     javascripts = "#{File.dirname(__FILE__)}/public/assets/"
     FileUtils.mkdir_p javascripts
     
