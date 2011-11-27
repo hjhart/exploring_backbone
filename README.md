@@ -13,8 +13,8 @@
 
 ## Setup directory
 
-	git clone https://github.com/hjhart/sinatra-coffee-script-template.git
-	cd sinatra-coffee-script-template
+	git clone git@github.com:hjhart/exploring_backbone.git
+	cd exploring_backbone
 	cp .rvmrc.example .rvmrc
 	
 (optional) Open up your new .rvmrc file and change the gemset to the name of your project name (or whatever else you want it to be)
