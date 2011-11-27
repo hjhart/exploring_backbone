@@ -11,7 +11,5 @@ describe "Nested Attributes", ->
 		happy = new Word word: "Happy"
 		joy = new Word word: "Joy"
 		sentence = new Sentence length: 2, words: [happy, joy]
-		
 		sentence_json = { length: 2, words: [ { word: "Happy" }, { word: "Joy" } ] }
-		
-		expect sentence.toJSON().toEqual( sentence_json )
+		expect(sentence.toJSON()).toEqual( sentence_json )
