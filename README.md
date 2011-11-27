@@ -46,7 +46,11 @@ Now everytime you load up `/assets/utils.js` it will re-render `utils.coffee` on
 	
 ## Productionizing:
 
-Once everything is ready for production, run `rake js:compile` and it will compile everything into the `public/assets` directory. Make sure your RACK_ENV is not set to 'development'
+Production is as simple as runnning
+
+	rackup -E production. 
+	
+This will run the js:compile rake task and dump the compiled javascripts within the `public/assets/` folder where they'll be fed as static resources.
 
 ## Feedback:
 

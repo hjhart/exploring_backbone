@@ -18,5 +18,6 @@ namespace :js do
         end 
       end 
     end
+    puts "Successfully compiled javascripts!"
   end
 end
