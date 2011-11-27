@@ -6,6 +6,8 @@ GEM
     coffee-script-source (1.0.1)
     json (1.5.1)
     rack (1.2.1)
+    rack-coffee (0.9.1)
+      rack
     sinatra (1.1.2)
       rack (~> 1.1)
       tilt (~> 1.2)
@@ -19,5 +21,6 @@ DEPENDENCIES
   coffee-script
   coffee-script-source
   json
+  rack-coffee
   sinatra
   therubyracer
