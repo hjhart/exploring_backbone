@@ -3,7 +3,7 @@
 * Painless CoffeeScript development inside of the familiar Sinatra platform.
 * Compile CoffeeScript automatically on browser refresh in development mode
 * Emulates Rails 3.1's asset pipeline
-* Automatically compiles and caches to javascript files for production mode.
+* Automatically compiles and serves static javascript files in production mode.
 
 ## Prerequisites:
 
